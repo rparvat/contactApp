@@ -20,6 +20,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="60i-Mz-wqr">
                                 <rect key="frame" x="21" y="225" width="100" height="100"/>
                                 <state key="normal" image="phone.png"/>
+                                <connections>
+                                    <action selector="PhoneClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JvS-R9-k8B"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i20-ap-YAk">
                                 <rect key="frame" x="129" y="217" width="118" height="116"/>
@@ -64,8 +67,8 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="anonymous.png" translatesAutoresizingMaskIntoConstraints="NO" id="NbY-C7-osl">
                                 <rect key="frame" x="107" y="83" width="163" height="97"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="[Name]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bEX-J3-dC8">
-                                <rect key="frame" x="160" y="188" width="57" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="[Name]" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bEX-J3-dC8">
+                                <rect key="frame" x="22" y="188" width="333" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -74,6 +77,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Quick Contact" id="vc5-ds-Zf3">
+                        <barButtonItem key="backBarButtonItem" title="Home" id="MNr-Wz-b5d"/>
                         <barButtonItem key="leftBarButtonItem" systemItem="compose" id="dC9-ig-Sem">
                             <connections>
                                 <segue destination="Rbm-AD-fIH" kind="push" id="4FB-xI-7XT"/>
@@ -88,17 +92,17 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="800"/>
                     <connections>
-                        <outlet property="displayedName" destination="bEX-J3-dC8" id="GVr-yY-ITQ"/>
+                        <outlet property="displayedName" destination="bEX-J3-dC8" id="eln-Xl-Dlk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="245" y="399"/>
         </scene>
-        <!--View Controller-->
+        <!--Code Gen View Controller-->
         <scene sceneID="eZf-cg-rnc">
             <objects>
-                <viewController id="DSp-JQ-gay" sceneMemberID="viewController">
+                <viewController id="DSp-JQ-gay" customClass="QRCodeGenViewController" customModule="QuickContact" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="t8Z-jX-uvE"/>
                         <viewControllerLayoutGuide type="bottom" id="qmt-bf-sbQ"/>
@@ -107,13 +111,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sample_qr.png" translatesAutoresizingMaskIntoConstraints="NO" id="eQ5-8v-UDJ">
-                                <rect key="frame" x="102" y="137" width="182" height="182"/>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tDU-GQ-PW1">
+                                <rect key="frame" x="70" y="212" width="240" height="240"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="In2-p3-h0f"/>
+                    <connections>
+                        <outlet property="imageViewSmall1" destination="tDU-GQ-PW1" id="yUY-wd-jeo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4eY-tR-7OJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -122,7 +129,7 @@
         <!--Scan QR Code-->
         <scene sceneID="8xf-LJ-NZL">
             <objects>
-                <viewController id="RGJ-Xe-e5D" sceneMemberID="viewController">
+                <viewController id="RGJ-Xe-e5D" customClass="QRScanningViewController" customModule="QuickContact" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ftt-OT-8S8"/>
                         <viewControllerLayoutGuide type="bottom" id="aam-zR-7GK"/>
@@ -223,7 +230,7 @@
                         <outlet property="instagram" destination="IyT-jX-qfG" id="TxR-O3-yLF"/>
                         <outlet property="linkedin" destination="zQz-SF-9pH" id="1ON-EN-DC6"/>
                         <outlet property="name" destination="UiE-9t-zFE" id="U0A-Pc-d7v"/>
-                        <outlet property="phoneNumber" destination="XW1-ha-3XD" id="UTG-VD-YRH"/>
+                        <outlet property="phone" destination="XW1-ha-3XD" id="wlN-IB-ueF"/>
                         <outlet property="snapchat" destination="dkq-dS-qeG" id="kOY-qr-UMC"/>
                         <outlet property="twitter" destination="Q0K-YE-v59" id="dHV-xM-OPj"/>
                         <outlet property="venmo" destination="WmO-IK-42m" id="QKZ-LV-4v8"/>
@@ -258,7 +265,6 @@
         <image name="linkedin.png" width="300" height="300"/>
         <image name="mail.png" width="512" height="512"/>
         <image name="phone.png" width="118" height="118"/>
-        <image name="sample_qr.png" width="3000" height="3000"/>
         <image name="snapchat.png" width="512" height="512"/>
         <image name="twitter.png" width="576" height="576"/>
         <image name="venmo.png" width="300" height="300"/>

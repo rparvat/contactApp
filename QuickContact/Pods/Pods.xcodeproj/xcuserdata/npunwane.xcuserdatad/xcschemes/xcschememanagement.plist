@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-QuickContact.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-QuickContactTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-QuickContactUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>QRCode.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>01738DB4224179A50EEB83C401AD4A49</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>269B3054DFB57E45F37739C6D382B8F1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D190F567EE3D55B2BE94310F5859034C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D51B904759760394C307080518659DAE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

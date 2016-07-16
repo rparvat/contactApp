@@ -26,6 +26,11 @@
 		3825FD051D3A0914002569D1 /* linkedin.png in Resources */ = {isa = PBXBuildFile; fileRef = 3825FD041D3A0914002569D1 /* linkedin.png */; };
 		3825FD091D3A098D002569D1 /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 3825FD081D3A098D002569D1 /* twitter.png */; };
 		3825FD0B1D3A182A002569D1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3825FD0A1D3A182A002569D1 /* HomeViewController.swift */; };
+		38D13B461D3A359500170563 /* QRCodeGenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D13B451D3A359500170563 /* QRCodeGenViewController.swift */; };
+		38D13B481D3A3E3800170563 /* QRScanningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D13B471D3A3E3800170563 /* QRScanningViewController.swift */; };
+		7DFD0AEF0A87FF1DF925CF80 /* Pods_QuickContact.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B835379FECD7CEEC2550DBF4 /* Pods_QuickContact.framework */; };
+		CC98962D80F4E9E4B19CD152 /* Pods_QuickContactTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB89D83EEA0AE919EB248216 /* Pods_QuickContactTests.framework */; };
+		F36F1F46D07B26EA8D01AAFD /* Pods_QuickContactUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D377A074FBEDB3974D643198 /* Pods_QuickContactUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,23 +64,34 @@
 		3825FCDE1D39E9BD002569D1 /* QuickContactUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickContactUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3825FCE21D39E9BD002569D1 /* QuickContactUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickContactUITests.swift; sourceTree = "<group>"; };
 		3825FCE41D39E9BD002569D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3825FCF01D3A0269002569D1 /* anonymous.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = anonymous.png; path = ../../anonymous.png; sourceTree = "<group>"; };
-		3825FCF21D3A033D002569D1 /* sample_qr.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sample_qr.png; path = ../../sample_qr.png; sourceTree = "<group>"; };
-		3825FCF41D3A0566002569D1 /* phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = phone.png; path = ../../phone.png; sourceTree = "<group>"; };
-		3825FCF61D3A0641002569D1 /* mail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mail.png; path = ../../mail.png; sourceTree = "<group>"; };
-		3825FCFA1D3A071B002569D1 /* address.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = address.png; path = ../../address.png; sourceTree = "<group>"; };
-		3825FCFC1D3A079F002569D1 /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = facebook.png; path = ../../facebook.png; sourceTree = "<group>"; };
-		3825FCFE1D3A0805002569D1 /* snapchat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = snapchat.png; path = ../../snapchat.png; sourceTree = "<group>"; };
-		3825FD001D3A085E002569D1 /* instagram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = instagram.png; path = ../../instagram.png; sourceTree = "<group>"; };
-		3825FD021D3A08C4002569D1 /* venmo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = venmo.png; path = ../../venmo.png; sourceTree = "<group>"; };
-		3825FD041D3A0914002569D1 /* linkedin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = linkedin.png; path = ../../linkedin.png; sourceTree = "<group>"; };
-		3825FD081D3A098D002569D1 /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = twitter.png; path = ../../twitter.png; sourceTree = "<group>"; };
+		3825FCF01D3A0269002569D1 /* anonymous.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = anonymous.png; path = /Users/npunwane/Desktop/anonymous.png; sourceTree = "<absolute>"; };
+		3825FCF21D3A033D002569D1 /* sample_qr.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sample_qr.png; path = /Users/npunwane/Desktop/sample_qr.png; sourceTree = "<absolute>"; };
+		3825FCF41D3A0566002569D1 /* phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = phone.png; path = /Users/npunwane/Desktop/phone.png; sourceTree = "<absolute>"; };
+		3825FCF61D3A0641002569D1 /* mail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mail.png; path = /Users/npunwane/Desktop/mail.png; sourceTree = "<absolute>"; };
+		3825FCFA1D3A071B002569D1 /* address.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = address.png; path = /Users/npunwane/Desktop/address.png; sourceTree = "<absolute>"; };
+		3825FCFC1D3A079F002569D1 /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = facebook.png; path = /Users/npunwane/Desktop/facebook.png; sourceTree = "<absolute>"; };
+		3825FCFE1D3A0805002569D1 /* snapchat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = snapchat.png; path = /Users/npunwane/Desktop/snapchat.png; sourceTree = "<absolute>"; };
+		3825FD001D3A085E002569D1 /* instagram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = instagram.png; path = /Users/npunwane/Desktop/instagram.png; sourceTree = "<absolute>"; };
+		3825FD021D3A08C4002569D1 /* venmo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = venmo.png; path = /Users/npunwane/Desktop/venmo.png; sourceTree = "<absolute>"; };
+		3825FD041D3A0914002569D1 /* linkedin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = linkedin.png; path = /Users/npunwane/Desktop/linkedin.png; sourceTree = "<absolute>"; };
+		3825FD081D3A098D002569D1 /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = twitter.png; path = /Users/npunwane/Desktop/twitter.png; sourceTree = "<absolute>"; };
 		3825FD0A1D3A182A002569D1 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3851F7DD1D3A257500FD0875 /* CIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CIColorExtension.swift; path = QuickContact/CIColorExtension.swift; sourceTree = "<group>"; };
 		3851F7DE1D3A257500FD0875 /* CIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CIImageExtension.swift; path = QuickContact/CIImageExtension.swift; sourceTree = "<group>"; };
 		3851F7DF1D3A257500FD0875 /* QRCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QRCode.swift; path = QuickContact/QRCode.swift; sourceTree = "<group>"; };
 		3851F7E01D3A257500FD0875 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIImageViewExtension.swift; path = QuickContact/UIImageViewExtension.swift; sourceTree = "<group>"; };
 		3851F7E51D3A267000FD0875 /* QRCode */ = {isa = PBXFileReference; lastKnownFileType = folder; name = QRCode; path = ../QRCode; sourceTree = "<group>"; };
+		38D13B451D3A359500170563 /* QRCodeGenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeGenViewController.swift; sourceTree = "<group>"; };
+		38D13B471D3A3E3800170563 /* QRScanningViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRScanningViewController.swift; sourceTree = "<group>"; };
+		4A4E8CD0D27E60D24D4D7175 /* Pods-QuickContactUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickContactUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuickContactUITests/Pods-QuickContactUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		53E684C6D6369F73C00D4467 /* Pods-QuickContactTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickContactTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuickContactTests/Pods-QuickContactTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8B76E5139FA9F4713657B30C /* Pods-QuickContact.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickContact.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuickContact/Pods-QuickContact.debug.xcconfig"; sourceTree = "<group>"; };
+		AD1C71FF807B6AD3FBAE1E72 /* Pods-QuickContact.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickContact.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuickContact/Pods-QuickContact.release.xcconfig"; sourceTree = "<group>"; };
+		B835379FECD7CEEC2550DBF4 /* Pods_QuickContact.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickContact.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB89D83EEA0AE919EB248216 /* Pods_QuickContactTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickContactTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C17B5DF24BC6B0ABD8CC109C /* Pods-QuickContactUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickContactUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuickContactUITests/Pods-QuickContactUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D377A074FBEDB3974D643198 /* Pods_QuickContactUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickContactUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF92C5BFF744728F3B5A5701 /* Pods-QuickContactTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickContactTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuickContactTests/Pods-QuickContactTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DFD0AEF0A87FF1DF925CF80 /* Pods_QuickContact.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC98962D80F4E9E4B19CD152 /* Pods_QuickContactTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F36F1F46D07B26EA8D01AAFD /* Pods_QuickContactUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +134,8 @@
 				3825FCD61D39E9BD002569D1 /* QuickContactTests */,
 				3825FCE11D39E9BD002569D1 /* QuickContactUITests */,
 				3825FCC01D39E9BD002569D1 /* Products */,
+				9842AD0C10FD7F3569B48B54 /* Pods */,
+				7E8F2207EB910A28121CEB29 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -134,7 +155,9 @@
 				3825FCC21D39E9BD002569D1 /* AppDelegate.swift */,
 				3825FCC41D39E9BD002569D1 /* ViewController.swift */,
 				3825FD0A1D3A182A002569D1 /* HomeViewController.swift */,
+				38D13B451D3A359500170563 /* QRCodeGenViewController.swift */,
 				3825FCC61D39E9BD002569D1 /* Main.storyboard */,
+				38D13B471D3A3E3800170563 /* QRScanningViewController.swift */,
 				3825FCC91D39E9BD002569D1 /* Assets.xcassets */,
 				3825FCCB1D39E9BD002569D1 /* LaunchScreen.storyboard */,
 				3825FCCE1D39E9BD002569D1 /* Info.plist */,
@@ -171,6 +194,29 @@
 			path = QuickContactUITests;
 			sourceTree = "<group>";
 		};
+		7E8F2207EB910A28121CEB29 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B835379FECD7CEEC2550DBF4 /* Pods_QuickContact.framework */,
+				BB89D83EEA0AE919EB248216 /* Pods_QuickContactTests.framework */,
+				D377A074FBEDB3974D643198 /* Pods_QuickContactUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9842AD0C10FD7F3569B48B54 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8B76E5139FA9F4713657B30C /* Pods-QuickContact.debug.xcconfig */,
+				AD1C71FF807B6AD3FBAE1E72 /* Pods-QuickContact.release.xcconfig */,
+				53E684C6D6369F73C00D4467 /* Pods-QuickContactTests.debug.xcconfig */,
+				EF92C5BFF744728F3B5A5701 /* Pods-QuickContactTests.release.xcconfig */,
+				4A4E8CD0D27E60D24D4D7175 /* Pods-QuickContactUITests.debug.xcconfig */,
+				C17B5DF24BC6B0ABD8CC109C /* Pods-QuickContactUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -178,9 +224,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3825FCE71D39E9BD002569D1 /* Build configuration list for PBXNativeTarget "QuickContact" */;
 			buildPhases = (
+				1AA8C2EACC5BEC05C1A80CF6 /* [CP] Check Pods Manifest.lock */,
 				3825FCBB1D39E9BD002569D1 /* Sources */,
 				3825FCBC1D39E9BD002569D1 /* Frameworks */,
 				3825FCBD1D39E9BD002569D1 /* Resources */,
+				0457B4B8BEAD27BFAC7CA4F7 /* [CP] Embed Pods Frameworks */,
+				265799E38B8FFD6FBE4C0DBC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -195,9 +244,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3825FCEA1D39E9BD002569D1 /* Build configuration list for PBXNativeTarget "QuickContactTests" */;
 			buildPhases = (
+				F3BAF266FEDDFE7A1F2D0761 /* [CP] Check Pods Manifest.lock */,
 				3825FCCF1D39E9BD002569D1 /* Sources */,
 				3825FCD01D39E9BD002569D1 /* Frameworks */,
 				3825FCD11D39E9BD002569D1 /* Resources */,
+				C6CD32456646A008B5BFDE85 /* [CP] Embed Pods Frameworks */,
+				A0DE4500F3D14A1A603B2C4E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -213,9 +265,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3825FCED1D39E9BD002569D1 /* Build configuration list for PBXNativeTarget "QuickContactUITests" */;
 			buildPhases = (
+				B5204CD92567C9B59874E4F3 /* [CP] Check Pods Manifest.lock */,
 				3825FCDA1D39E9BD002569D1 /* Sources */,
 				3825FCDB1D39E9BD002569D1 /* Frameworks */,
 				3825FCDC1D39E9BD002569D1 /* Resources */,
+				CF57C2C0EDA524C0855DF2A3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -309,14 +363,139 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0457B4B8BEAD27BFAC7CA4F7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickContact/Pods-QuickContact-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1AA8C2EACC5BEC05C1A80CF6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		265799E38B8FFD6FBE4C0DBC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickContact/Pods-QuickContact-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0DE4500F3D14A1A603B2C4E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickContactTests/Pods-QuickContactTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5204CD92567C9B59874E4F3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C6CD32456646A008B5BFDE85 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickContactTests/Pods-QuickContactTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF57C2C0EDA524C0855DF2A3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickContactUITests/Pods-QuickContactUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3BAF266FEDDFE7A1F2D0761 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3825FCBB1D39E9BD002569D1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				3825FCC51D39E9BD002569D1 /* ViewController.swift in Sources */,
+				38D13B481D3A3E3800170563 /* QRScanningViewController.swift in Sources */,
 				3825FCC31D39E9BD002569D1 /* AppDelegate.swift in Sources */,
 				3825FD0B1D3A182A002569D1 /* HomeViewController.swift in Sources */,
+				38D13B461D3A359500170563 /* QRCodeGenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,6 +635,7 @@
 		};
 		3825FCE81D39E9BD002569D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B76E5139FA9F4713657B30C /* Pods-QuickContact.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -470,6 +650,7 @@
 		};
 		3825FCE91D39E9BD002569D1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD1C71FF807B6AD3FBAE1E72 /* Pods-QuickContact.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -484,6 +665,7 @@
 		};
 		3825FCEB1D39E9BD002569D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53E684C6D6369F73C00D4467 /* Pods-QuickContactTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = QuickContactTests/Info.plist;
@@ -496,6 +678,7 @@
 		};
 		3825FCEC1D39E9BD002569D1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF92C5BFF744728F3B5A5701 /* Pods-QuickContactTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = QuickContactTests/Info.plist;
@@ -508,6 +691,7 @@
 		};
 		3825FCEE1D39E9BD002569D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A4E8CD0D27E60D24D4D7175 /* Pods-QuickContactUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = QuickContactUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -519,6 +703,7 @@
 		};
 		3825FCEF1D39E9BD002569D1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C17B5DF24BC6B0ABD8CC109C /* Pods-QuickContactUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = QuickContactUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

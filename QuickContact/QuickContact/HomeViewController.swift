@@ -7,7 +7,6 @@
 //
 
 import UIKit
-//import QRCode
 
 class HomeViewController: UIViewController {
     
@@ -21,7 +20,6 @@ class HomeViewController: UIViewController {
     
     override func viewDidAppear(animated: Bool) {
         if let userName = defaults.stringForKey("userName") {
-            print(userName)
             displayedName?.text = userName
         }
     }
@@ -29,6 +27,11 @@ class HomeViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    
+    @IBAction func PhoneClicked(sender: AnyObject) {
+        defaults.setObject(true, forKey: "phoneOn")
     }
     
 }

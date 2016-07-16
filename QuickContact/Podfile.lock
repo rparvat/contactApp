@@ -1,0 +1,21 @@
+PODS:
+  - QRCode (0.5)
+
+DEPENDENCIES:
+  - QRCode (from `https://github.com/aschuch/QRCode.git`)
+
+EXTERNAL SOURCES:
+  QRCode:
+    :git: https://github.com/aschuch/QRCode.git
+
+CHECKOUT OPTIONS:
+  QRCode:
+    :commit: fb7a370678bc2dc8a605cf95cb0a23ce68046d0b
+    :git: https://github.com/aschuch/QRCode.git
+
+SPEC CHECKSUMS:
+  QRCode: edfd9c68c9555072e434f892a2d5dca46cc84114
+
+PODFILE CHECKSUM: 72abf63bbe6eaec28466b5fa26811f3c6dd27035
+
+COCOAPODS: 1.0.1

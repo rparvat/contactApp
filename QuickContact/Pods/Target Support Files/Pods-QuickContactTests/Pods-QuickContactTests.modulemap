@@ -1,0 +1,6 @@
+framework module Pods_QuickContactTests {
+  umbrella header "Pods-QuickContactTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
