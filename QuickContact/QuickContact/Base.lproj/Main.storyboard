@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="8f1-gO-NRK">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Quick Contact-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="QuickContact" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="800"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="60i-Mz-wqr">
+                                <rect key="frame" x="21" y="225" width="100" height="100"/>
+                                <state key="normal" image="phone.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i20-ap-YAk">
+                                <rect key="frame" x="129" y="217" width="118" height="116"/>
+                                <state key="normal" image="mail.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t3C-4j-ku8">
+                                <rect key="frame" x="255" y="225" width="100" height="100"/>
+                                <state key="normal" image="address.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ujj-bg-2bi">
+                                <rect key="frame" x="22" y="341" width="99" height="100"/>
+                                <state key="normal" image="facebook.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BBj-0i-UXY">
+                                <rect key="frame" x="138" y="341" width="100" height="100"/>
+                                <state key="normal" image="snapchat.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GWD-aj-JWf">
+                                <rect key="frame" x="255" y="341" width="100" height="100"/>
+                                <state key="normal" image="instagram.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IqV-1A-BAE">
+                                <rect key="frame" x="22" y="457" width="99" height="98"/>
+                                <state key="normal" image="linkedin.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GM4-bv-hht">
+                                <rect key="frame" x="138" y="457" width="100" height="98"/>
+                                <state key="normal" image="twitter.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FpH-Xr-e59">
+                                <rect key="frame" x="255" y="457" width="100" height="100"/>
+                                <state key="normal" image="venmo.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4cn-zP-RkT">
+                                <rect key="frame" x="94" y="586" width="189" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Generate QR Code"/>
+                                <connections>
+                                    <segue destination="DSp-JQ-gay" kind="push" id="VkI-7D-jKm"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="anonymous.png" translatesAutoresizingMaskIntoConstraints="NO" id="NbY-C7-osl">
+                                <rect key="frame" x="107" y="83" width="163" height="97"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="[Name]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bEX-J3-dC8">
+                                <rect key="frame" x="160" y="188" width="57" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Quick Contact" id="vc5-ds-Zf3">
+                        <barButtonItem key="leftBarButtonItem" systemItem="compose" id="dC9-ig-Sem">
+                            <connections>
+                                <segue destination="Rbm-AD-fIH" kind="push" id="4FB-xI-7XT"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="GsP-tc-Q8q">
+                            <connections>
+                                <segue destination="RGJ-Xe-e5D" kind="push" id="Hng-j5-Qs7"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="800"/>
+                    <connections>
+                        <outlet property="displayedName" destination="bEX-J3-dC8" id="GVr-yY-ITQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="399"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="eZf-cg-rnc">
+            <objects>
+                <viewController id="DSp-JQ-gay" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="t8Z-jX-uvE"/>
+                        <viewControllerLayoutGuide type="bottom" id="qmt-bf-sbQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6ck-Uq-fpx">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="800"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sample_qr.png" translatesAutoresizingMaskIntoConstraints="NO" id="eQ5-8v-UDJ">
+                                <rect key="frame" x="102" y="137" width="182" height="182"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="In2-p3-h0f"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4eY-tR-7OJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="1483"/>
+        </scene>
+        <!--Scan QR Code-->
+        <scene sceneID="8xf-LJ-NZL">
+            <objects>
+                <viewController id="RGJ-Xe-e5D" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ftt-OT-8S8"/>
+                        <viewControllerLayoutGuide type="bottom" id="aam-zR-7GK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="R3C-Dl-J5n">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="800"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Scan QR Code" id="h1v-N8-44O"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ucn-gC-5iv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="934" y="305"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="3ze-6D-w6e">
+            <objects>
+                <viewController id="Rbm-AD-fIH" customClass="ViewController" customModule="QuickContact" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="feM-Mt-mnt"/>
+                        <viewControllerLayoutGuide type="bottom" id="SmQ-Wc-psu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zEa-go-eas">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="800"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UiE-9t-zFE">
+                                <rect key="frame" x="20" y="178" width="331" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XW1-ha-3XD">
+                                <rect key="frame" x="20" y="221" width="331" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hyw-BP-Pdw">
+                                <rect key="frame" x="20" y="308" width="331" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Facebook" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eLP-N4-bpp">
+                                <rect key="frame" x="20" y="351" width="331" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Snapchat" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dkq-dS-qeG">
+                                <rect key="frame" x="20" y="394" width="331" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Instagram" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IyT-jX-qfG">
+                                <rect key="frame" x="20" y="441" width="331" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="LinkedIn" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zQz-SF-9pH">
+                                <rect key="frame" x="20" y="489" width="331" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Twitter" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q0K-YE-v59">
+                                <rect key="frame" x="20" y="535" width="331" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Venmo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WmO-IK-42m">
+                                <rect key="frame" x="20" y="579" width="331" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O1g-wU-dkU">
+                                <rect key="frame" x="169" y="616" width="34" height="30"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="SaveProfile:" destination="Rbm-AD-fIH" eventType="touchUpInside" id="Apg-Ez-KYV"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bLq-Ik-pG3">
+                                <rect key="frame" x="20" y="265" width="331" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="anonymous.png" translatesAutoresizingMaskIntoConstraints="NO" id="X4l-kP-Ms2">
+                                <rect key="frame" x="119" y="80" width="134" height="87"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="diM-fS-luX"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="800"/>
+                    <connections>
+                        <outlet property="address" destination="hyw-BP-Pdw" id="Tqm-Iz-S6L"/>
+                        <outlet property="email" destination="bLq-Ik-pG3" id="Lg7-nU-h1Y"/>
+                        <outlet property="facebook" destination="eLP-N4-bpp" id="yWi-Vz-Neo"/>
+                        <outlet property="instagram" destination="IyT-jX-qfG" id="TxR-O3-yLF"/>
+                        <outlet property="linkedin" destination="zQz-SF-9pH" id="1ON-EN-DC6"/>
+                        <outlet property="name" destination="UiE-9t-zFE" id="U0A-Pc-d7v"/>
+                        <outlet property="phoneNumber" destination="XW1-ha-3XD" id="UTG-VD-YRH"/>
+                        <outlet property="snapchat" destination="dkq-dS-qeG" id="kOY-qr-UMC"/>
+                        <outlet property="twitter" destination="Q0K-YE-v59" id="dHV-xM-OPj"/>
+                        <outlet property="venmo" destination="WmO-IK-42m" id="QKZ-LV-4v8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lvh-kb-Qnj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="-524"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="FH1-Yr-0Lh">
+            <objects>
+                <navigationController id="8f1-gO-NRK" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ECw-dD-gaR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="WBs-lE-H3C"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hy5-3T-4Tf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-458" y="299"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="address.png" width="216" height="216"/>
+        <image name="anonymous.png" width="360" height="215"/>
+        <image name="facebook.png" width="720" height="720"/>
+        <image name="instagram.png" width="200" height="200"/>
+        <image name="linkedin.png" width="300" height="300"/>
+        <image name="mail.png" width="512" height="512"/>
+        <image name="phone.png" width="118" height="118"/>
+        <image name="sample_qr.png" width="3000" height="3000"/>
+        <image name="snapchat.png" width="512" height="512"/>
+        <image name="twitter.png" width="576" height="576"/>
+        <image name="venmo.png" width="300" height="300"/>
+    </resources>
+</document>
